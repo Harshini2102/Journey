@@ -1,0 +1,145 @@
+.maps{
+    width:100%;
+    height:29vh;
+    background-color:  #69c6ba;
+}
+
+.link-li{
+    background: transparent;
+    flex: 1 1 auto;
+    transition: all 0.3s ease;  
+    height:100%;
+    
+}
+
+.link {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    height:100%;
+}
+
+.link:hover,
+.link.active {
+    background: #c66995;
+}
+
+.img-fluid{
+    max-width:100%;
+    height:auto;
+}
+
+.north-america{
+    border:1px solid white;
+    width:70%;
+    height:29vh;
+    background-color: white;
+    margin:50px 200px;
+    border:none;
+}
+.hotel-description{
+    position: absolute;
+    display:inline;
+}
+
+.hotel-margin{
+    margin:20px 20px;
+}
+
+/*.curve
+{
+    margin-left: 500px;
+    background-color: #69c6ba;
+}*/
+
+
+.price-desc{
+    background-color: #69c6ba;
+    background-image: url(../img/button-curve.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    width: 200px;
+    height:29vh;
+    transition: all 0.3s ease;
+    margin:-185px 725px;
+}
+
+.price-desc:hover{
+    cursor:pointer;
+    background-color: #c66995;
+    color:white;
+}
+
+.price {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.price-link {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 60px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.hotel-title{
+    color:#c66995;
+}
+
+.text-gray{
+    color:#777;
+}
+
+.hotels{
+    max-width: 970px;
+    margin: 60px auto;
+}
+
+
+.tab-content>.hotels{display:none}
+
+.tab-content>.active{display:block}
+
+.clearfix::after{display:block;clear:both;content:""}
+
+.fade {
+    transition:-webkit-transform .3s ease-out;
+    transition:transform .3s ease-out;
+    transition:transform .3s ease-out,-webkit-transform .3s ease-out;
+    -webkit-transform:translate(0,-25%);transform:translate(0,-25%)
+}
+
+.fade{opacity:0}
+
+
+.fade{
+    opacity:0;
+    transition:opacity .15s linear}
+
+    .fade.show{opacity:1}
+

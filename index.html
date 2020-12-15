@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/Journey.css">
+    <link rel="stylesheet" href="CSS/Map_Hotel.css">
+    <link rel="stylesheet" href="CSS/Contact_form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <a class="content" href="#">
+                <img src="img/logo.png">
+                journey
+            </a>
+            <div class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#slider">Top Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#maps">Recommended Places</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactform">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Lets begin-->
+    <div class="banner">
+        <div class="banner-overlay"></div>
+        <h1>Let's Begin</h1>
+        <img src="img/dots-3.png">
+        <h3>We assist you to choose the best.</h3>
+        <a href="#form"><i class="fa fa-angle-down fa-2x down-arrow"></i></a>
+
+        <!--Form-->
+        <form method="GET" action="#" id="form">
+            <div>
+                <label for="inputCity">Choose Your Destination</label>
+                <input type="text" placeholder="Type your destination..." id="inputCity" >
+
+                <label for="inputRoom" class="labelroom">How many rooms?</label>
+                <select name="room" class="rooms select" id="inputRoom">
+                    <option value="1" selected>1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+                    <option value="7">7 Rooms</option>
+                    <option value="8">8 Rooms</option>
+                    <option value="9">9 Rooms</option>
+                    <option value="10">10 Rooms</option>
+                </select>
+
+                <label for="inputadult">Adult</label>
+                <select name="adult" class="adults select" id="inputadult">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <label for="inputchildren">Children</label>
+                <select name="adult" class="adults select" id="inputachildren">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="inputcheckin">Check In Date</label>
+                <input type="text" placeholder="Check In" class="date">
+
+                <label for="inputcheckin">Check Out Date</label>
+                <input type="text" placeholder="Check Out" class="date">
+
+                <button class="room-book">Check Availibility</button>
+            </div>
+        </form>
+        <!--Form Emd-->
+    </div>
+
+    <!--Journey-->  
+    <div class="journey">
+        <h2>YOUR JOURNEY IS OUR PRIORITY</h2>
+        <p>
+            Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt mi metus quis
+            lectus. Duis nec lobortis velit. Vivamus<br>
+            id magna vulputate, tempor ante eget, tempus augue. Maecenas ultricies neque magna.
+        </p>
+        <button>Continue Explore</button>
+    </div>
+
+    <!--Slider-->
+    <div class="slider" id="slider">
+        <section class="slideshow">
+            <div class="slider1">
+                <img src="img/tm-img-01.jpg">
+                <img src="img/tm-img-02.jpg">
+                <img src="img/tm-img-03.jpg">
+            </div>
+            <div class="arrow">
+                <i class="fa fa-arrow-left"></i>
+                <i class="fa fa-arrow-right"></i>
+            </div>
+            
+            <div class="slider1-description">
+                <h2>Europe's most visited places</h2>
+                <p>
+                    Aenean in lacus nec dolor fermentum congue. Maecenas ut velit pharetra, pharetra tortor sit <br>
+                    amet, vulputate sem. Vestibulum mi nibh, faucibus ac eros id, sagittis tincidunt velit. Proin <br>
+                    interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar id, sagittis eget diam.
+                </p>
+                <button>continue reading</button>
+            </div>
+        </section>
+
+        <section class="slideshow">
+            <div class="slider2-description">
+                <h2>Asia's most popular places</h2>
+                <p>
+                    Vivamus in massa ullamcorper nunc auctor accumsan ac at arcu. Donec sagittis mattis<br>
+                    pharetra. Proin commodo, ante et volutpat pulvinar, arcu arcu ullamcorper diam, id maximus<br>
+                    sem tellus id sem. Suspendisse eget rhoncus diam. Fusce urna elit, porta nec ullamcorper id.
+                </p>
+                <button class="slider2-button">continue reading</button>
+            </div>
+            <div class="slider1">
+                <img src="img/tm-img-02.jpg">
+                <img src="img/tm-img-03.jpg">
+                <img src="img/tm-img-01.jpg">
+            </div>
+        </section>
+
+        <section class="slideshow">
+            <div class="slider1">
+                <img src="img/tm-img-03.jpg">
+                <img src="img/tm-img-02.jpg">
+                <img src="img/tm-img-01.jpg">
+            </div>
+            <div class="arrow">
+                <i class="fa fa-arrow-left"></i>
+                <i class="fa fa-arrow-right"></i>
+            </div>
+            <div class="slider1-description">
+                <h2>America's most famous places</h2>
+                <p>
+                    Donec nec laoreet diam, at vehicula ante. Orci varius natoque penatibus et magnis dis<br>
+                    parturient montes, nascetur ridiculus mus. Suspendisse nec dapibus nunc, quis viverra metus.
+                    Morbi eget diam gravida, euismod magna vel, tempor urna.
+                </p>
+                <button>continue reading</button>
+            </div>
+        </section>
+    </div>
+    <!--Slider End-->
+    <!--Journey End -->
+
+    <!--Map Hotel-->
+    <div class="maps" id="maps">
+        <ul>
+            <li class="link-li">
+                <a href="#hotel1"  data-toggle="tab" class="link">
+                    <img src="img/north-america.png" alt="Image" class="img-fluid">
+                    North America
+                </a>
+            </li>
+
+            <li class="link-li">
+                <a href="#hotel2" data-toggle="tab" class="link">
+                    <img src="img/south-america.png" alt="Image" class="img-fluid">
+                    South America
+                </a>
+            </li>
+
+            <li  class="link-li">
+                <a href="#hotel3" class="link" data-toggle="tab">
+                    <img src="img/europe.png" alt="Image" class="img-fluid">
+                    Europe
+                </a>
+            </li>
+
+            <li  class="link-li">
+                <a href="#hotel4" class="link active" data-toggle="tab">
+                    <img src="img/asia.png" alt="Image" class="img-fluid">
+                    Asia
+                </a>
+            </li>
+
+            <li  class="link-li">
+                <a href="#hotel5" class="link" data-toggle="tab">
+                    <img src="img/africa.png" alt="Image" class="img-fluid">
+                    Africa
+                </a>
+            </li>
+
+            <li  class="link-li">
+                <a href="#hotel6" class="link" data-toggle="tab">
+                    <img src="img/australia.png" alt="Image" class="img-fluid">
+                    Australia
+                </a>
+            </li>
+
+            <li  class="link-li">
+                <a href="#hotel7" class="link" data-toggle="tab">
+                    <img src="img/antartica.png" alt="Image" class="img-fluid">
+                    Antartica
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content clearfix">
+    <!--</div>-->
+    <!--Map Hotel End-->
+
+    <!--Hotels  1-->
+    <div class="hotels fade" id="hotel1">
+        <div class="north-america">
+            <img src="img/tm-img-06.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>North Garden Resort</h3>
+                <p class="hotel-title">One North</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$110</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-07.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>FELIS NEC DIGNISSIM</h3>
+                <p class="hotel-title">Two North</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$120</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-05.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>SED FERMENTUM JUSTO</h3>
+                <p class="hotel-title">Three North</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$130</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-04.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>MAECENAS ULTRICIES NEQUE</h3>
+                <p class="hotel-title">Four North</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$140</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+
+    </div>
+    <!--Hotels 1 End-->
+
+
+    <!--Hotels  2-->
+    <div class="hotels fade" id="hotel2">
+        <div class="north-america">
+            <img src="img/tm-img-05.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>SOUTH RESORT HOTEL</h3>
+                <p class="hotel-title">South One</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$220</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-04.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>AENEAN AC ANTE NEC DIAM</h3>
+                <p class="hotel-title">South Second</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$230</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-07.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>SUSPENDISSE NEC DAPIBUS</h3>
+                <p class="hotel-title">South Third</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$240</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-06.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>ALIQUAM VIVERRA MI AT NISL</h3>
+                <p class="hotel-title">South Fourth</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$250</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+        
+
+    </div>
+    <!--Hotels 2 End-->
+
+
+    <!--Hotels  3-->
+    <div class="hotels fade" id="hotel3">
+        <div class="north-america">
+            <img src="img/tm-img-04.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>EUROPE HOTEL</h3>
+                <p class="hotel-title">Venecia, Italy</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$330</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-05.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>IN VIVERRA ENIM TURPIS</h3>
+                <p class="hotel-title">Paris, France</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$340</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-06.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>VOLUTPAT PELLENTESQUE</h3>
+                <p class="hotel-title">Barcelona, Spain</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$350</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-07.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>GRAND RESORT PASHA</h3>
+                <p class="hotel-title">Istanbul, Turkey</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$360</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+        
+
+    </div>
+    <!--Hotels 3 End-->
+
+
+    <!--Hotels  4-->
+    <div class="hotels fade" id="hotel4">
+        <div class="north-america">
+            <img src="img/tm-img-06.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>ASIA RESORT HOTEL</h3>
+                <p class="hotel-title">Singapore</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$440</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-07.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>NULLAM EGET EST A NISL</h3>
+                <p class="hotel-title">Yangon, Myanmar</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$450</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-05.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>PROIN INTERDUM ULLAMCORPER</h3>
+                <p class="hotel-title">Bangkok, Thailand</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$460</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-04.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>LOREM IPSUM DOLOR SIT</h3>
+                <p class="hotel-title">Vientiane, Laos</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$470</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+        
+
+    </div>
+    <!--Hotels 4 End-->
+
+    <!--Hotels  5-->
+    <div class="hotels fade" id="hotel5">
+        <div class="north-america">
+            <img src="img/tm-img-05.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>AFRICA RESORT HOTEL</h3>
+                <p class="hotel-title">First City</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$550</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-04.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>AENEAN AC MAGNA DIAM</h3>
+                <p class="hotel-title">Second City</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$560</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-07.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>BEACH BARBECUE SUNSET</h3>
+                <p class="hotel-title">Third City</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$570</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-06.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>GRAND RESORT PASHA</h3>
+                <p class="hotel-title">Fourth City</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$580</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+    </div>
+    <!--Hotels 5 End-->
+
+    <!--Hotels  6-->
+    <div class="hotels fade" id="hotel6">
+        <div class="north-america">
+            <img src="img/tm-img-04.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>HOTEL AUSTRALIA</h3>
+                <p class="hotel-title">City One</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$660</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-05.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>PROIN INTERDUM ULLAMCORPER</h3>
+                <p class="hotel-title">City Two</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$650</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-06.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>BEACH BARBECUE SUNSET</h3>
+                <p class="hotel-title">City Three</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$640</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-07.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>GRAND RESORT PASHA</h3>
+                <p class="hotel-title">City Four</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$630</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+    </div>
+    <!--Hotels 6 End-->
+
+    
+    <!--Hotels  7-->
+    <div class="hotels fade" id="hotel7">
+        <div class="north-america">
+            <img src="img/tm-img-04.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>ANTARTICA RESORT</h3>
+                <p class="hotel-title">Ant City One</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$770</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-05.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>PULVINAR SEMPER</h3>
+                <p class="hotel-title">Ant City Two</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$230</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-06.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>CRAS VEL SAPIEN</h3>
+                <p class="hotel-title">Ant City Three</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$140</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+
+        <div class="north-america">
+            <img src="img/tm-img-07.jpg" alt="Image">
+            <div class="hotel-description hotel-margin">
+                <h3>NULLAM EGET EST</h3>
+                <p class="hotel-title">Ant City Four</p>
+                <p class="text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu<br>
+                     varius eros lacus sit amet lectus. Donec blandit luctus dictum...
+                </p> 
+            </div> 
+                <a href="#" class="price-desc">
+                  <p class="price">$190</p>
+                 `<p class="price-link">Continue Reading</p>
+                </a> 
+        </div>
+    </div>
+    <!--Hotels 7 End-->
+
+    </div>
+    </div>
+    <!--End-->
+
+    <Div class="form1" id="contactform">
+        <div id="googleMap"></div>
+        <form action="index.html" method="post" class="contact-form">
+            <input type="text" placeholder="Name" required class="name">
+            <input type="email" placeholder="Email" required class="name">
+            <input type="text" placeholder="Subject" required class="subject">
+            <textarea  rows="9" placeholder="Message" class="message" required></textarea>
+            <button class="contact-btn">Send Message Now</button>
+        </form>
+        
+    </Div>
+
+    <footer class="footer">
+        <p>Copyright © 2020Your Company . Designed by Template Mo</p>
+    </footer>
+     
+    <script>
+        const next = document.querySelectorAll(".arrow .fa-arrow-right");
+        next.forEach(element => {
+            element.addEventListener('click', function () {
+                element.parentElement.previousElementSibling.appendChild(element.parentElement.previousElementSibling.firstElementChild);
+            })
+        });
+
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap">
+        /* Google Maps
+        ------------------------------------------------*/
+        function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+</body>
+
+</html>
